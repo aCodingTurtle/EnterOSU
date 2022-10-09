@@ -10,8 +10,8 @@ const Splash = ({ navigation }) => {
             <Text style = {styles.title}>
                  enterOSU
             </Text>
-            <Button onPress = {() => navigation.navigate('LogIn')}>
-                Switch to Home Screen
+            <Button onPress = {() => navigation.navigate('Home')}>
+                Login
             </Button>
         </View>
     );

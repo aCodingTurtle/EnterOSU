@@ -6,12 +6,12 @@ import BuildingData from '../Buildings/BuildingData.js';
 
 const OhioUnion = {
     name : "Ohio Union", 
-    imageSrc : '../assets/OhioUnion.png',
+    imageSrc : '../assets/HagertyHall.png',
     address : "1739 N High St, Columbus, OH 43210", 
     description : "Some doors enter to the restaurants, not the main union atrium."
 };
 
-const Building = ({ navigation }) => {
+const OU = ({ navigation }) => {
     return (
         <View>
             <Text>
@@ -24,10 +24,11 @@ const Building = ({ navigation }) => {
             <Text>
                 1739 N High St, Columbus, OH 43210
             </Text>
+            <Text>
+                {OhioUnion.description}
+            </Text>
         </View>
     );
 };
 
-export default Building; 
-
-//<Image source={require(building.imageSrc)} />
+export default OU; 

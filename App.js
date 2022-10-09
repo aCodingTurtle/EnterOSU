@@ -15,23 +15,31 @@ import Splash from './Pages/Splash.js';
 
 import styles from './Pages/styles.js';
 import { registerRootComponent } from 'expo';
+import HH from './Pages/HagertyHall.js';
+import SL from './Pages/SmithLab.js';
+import OU from './Pages/OhioUnion.js';
 
 const Stack = createNativeStackNavigator(); 
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style = {styles.nav}>
       <Stack.Navigator initialRouteName = 'Splash'>
         <Stack.Screen name = 'Splash' component={Splash}/>
-        <Stack.Screen name = 'LogIn' component = {LogIn}/>
+        
         <Stack.Screen name = 'Home' component = {Home}/>
         <Stack.Screen name = 'Setting' component = {Setting}/>
-        <Stack.Screen name = 'Building' component = {Building}/>
-        
+        <Stack.Screen name = 'OU' component = {OU}/>
+        <Stack.Screen name = 'HH' component = {HH}/>
+        <Stack.Screen name = 'SL' component = {SL}/> 
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
+
+// Removed screens
+// <Stack.Screen name = 'Building' component = {Building}/> 
+// <Stack.Screen name = 'LogIn' component = {LogIn}/>
 
 /*       <View style = {styles.loadingPage}>  
 <Text style = {styles.title}>

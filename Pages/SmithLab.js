@@ -4,30 +4,33 @@ import { Text } from 'react-native-paper';
 import BuildingData from '../Buildings/BuildingData.js';
 
 
-const OhioUnion = {
-    name : "Ohio Union", 
-    imageSrc : '../assets/OhioUnion.png',
-    address : "1739 N High St, Columbus, OH 43210", 
-    description : "Some doors enter to the restaurants, not the main union atrium."
+const SmithLab = {
+    name : "Smith Labs", 
+    imageSrc : '../assets/SmithLab.png',
+    address : "174 W 18th Ave, Columbus, OH 43210", 
+    description : "Most doors enter stairwells."
 };
 
-const Building = ({ navigation }) => {
+const SL = ({ navigation }) => {
     return (
         <View>
             <Text>
-                {OhioUnion.name}
+                {SmithLab.name}
             </Text>
-            <Image source= {require('../assets/OhioUnion.png')}   style = {{height:250, width:350, float: 'center'}}/>
+            <Image source= {require('../assets/SmithLab.png')}   style = {{height:250, width:350, float: 'center'}}/>
             <Text style = {{textAlign:'center'}}>
              -------------------------------------------------------- 
             </Text>
             <Text>
-                1739 N High St, Columbus, OH 43210
+                {SmithLab.address}
+            </Text>
+            <Text>
+                {SmithLab.description}
             </Text>
         </View>
     );
 };
 
-export default Building; 
+export default SL; 
 
 //<Image source={require(building.imageSrc)} />

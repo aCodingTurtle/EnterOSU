@@ -1,33 +1,65 @@
-import React,{ useState } from 'react'
+// import React,{ useState } from 'react';
+// import AsyncStorage from '@react-native-async-storage/async-storage';
+// import {View, Text, StyleSheet, useColorScheme, hidePassword} from 'react-native';
+// import Icon from "reat-native-vector-icons/MaterialCommunityIcons";
+// import { Button } from 'react-native-paper';
+// import styles from './styles';
 
-function LoginForm({ Login, error}) {
-    const [details, setDetails] = useState({name:"",email: "",password:""});
-    const submitHandler = e => {
-        e.preventDefault();
+// const Input = ({
+//     label,
+//     iconName,
+//     error,
+//     password,
+//     onFocus = {},
+//     ...props
+// }) => {
+//     const [isFocused, setIsFocused] =React.useState(false);
+//     return (
+//     <View style ={{marginBottom: 20}}>
+//         <Text style={style.label}>
+//             {label}
+//         </Text>
+//         <View style={[style.inputContainer, {borderColor: error ? styles.COLORS.red:isFocused ? styles.COLORS.darkBlue: styles.COLORS.light}]}>
+//             <Icon name={iconName} style={{fontSize :22, color:styles.COLORS.darkBlue, marginRight: 10}}/>
+//             <TextInput 
+//             secureTextEntry={hidePassword}
+//             autoCorrect={false}
+//             onFocus={() => {
+//                 onFocus();
+//                 setIsFocused(true);
+//             }}
 
-        Login(details);
-    }
-  return (
-    <form onSubmit ={submitHandler}>
-        <div className = "form-inner">
-            <h2>Login</h2>
-            {(error !="") ? (<div className = "error">{error}</div>) : ""}
-            <div className = "form-group">
-                <label htmlFor = "name">Name: </label>
-                <input type ="text" name = "name" id="name"  onChange={e => setDetails({...details, name: e.target.value })} value = {details.name}/>
-            </div>
-            <div className = "form-group">
-                <label htmlFor = "email">Email: </label>
-                <input type ="email" name = "email" id="email" onChange={e => setDetails({...details, email: e.target.value })} value = {details.email}/>
-            </div>
-            <div className ="form-group">
-                <label htmlFor = "password">Password: </label>
-                <input type ="password" name = "password" id="password" onChange={e => setDetails({...details, password: e.target.value })} value = {details.password}/>
-            </div>
-            <input type = "submit" value ="LOGIN"></input>
-        </div>
-    </form>
-  )
-}
+//             onBlur={() => {
+//                 setIsFocused(false);
+//             }}
+//             style ={{color:styles.styles.COLORS.darkBlue,flex: 1}}{...props}/>
+//             {password && ( <Icon 
+//             onPress={()=>setHidePassword(!hidePassword)}
+//             style={{fontSize:22,color:styles.COLORS.darkBlue}}
+//             name ={hidePassword ? "eye-outline":"eye-off-outline"}
+//             />)}
+           
+//         </View>
+//         {error && (<Text style={{color:styles.COLORS.red,fontSize:12,marginTop: 7}}>{error}</Text>)}
+        
+//     </View>
+//     );
+// };
 
-export default LoginForm;
+// const style = StyleSheet.create({
+//     label: {
+//         marginVertical: 5,
+//         fontSize: 14,
+//         color: styles.COLORS.grey,
+//     },
+//     inputContainer:{
+//         height: 55,
+//         backgroundColor: styles.COLORS.light,
+//         flexDirection:'row',
+//         paddingHorizontal: 15,
+//         borderWidth: 0.5,
+//         alignItems: 'center',
+//     }
+// });
+
+// export default Input;
