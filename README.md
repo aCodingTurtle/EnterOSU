@@ -1,3 +1,11 @@
+### EnterOSU
+# An app designed to make entering buildings on campus easier for everyone.
+
+Map data from: https://www.google.com/maps/d/edit?mid=1c7hbT4FndSoVykqWeHFVd2uTmfHREkw&usp=sharing
+
+A 24 hour Hack OHI/O project
+
+### Installations and Getting Started
 How to actually get started with a React Native app:
 - install node.js
 - install Android Studio and Android SDKs
