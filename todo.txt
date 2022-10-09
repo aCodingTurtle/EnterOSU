@@ -1,0 +1,19 @@
+fix css on splash
+
+figure out log in
+
+do database
+    building
+    student
+    
+
+finish building data on google maps
+
+make the building template page
+
+
+actually fill in the pages
+
+link login page to homepage
+
+
